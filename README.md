@@ -2,6 +2,5 @@
 
 ### 숫자야구 프로젝트 저장소
 
-- 이 저장소를 자신의 저장소로 fork하여 프로젝트를 진행합니다
 
-![숫자야구](https://user-images.githubusercontent.com/90945013/136037873-7cc3e0fb-a3b6-4c2f-9d88-a29b6716731c.jpg)
+![숫자야구_v2](https://user-images.githubusercontent.com/90945013/136130236-359d0e37-98a7-4c3e-b010-e07a38d93eec.jpg)
