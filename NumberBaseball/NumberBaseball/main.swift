@@ -130,12 +130,12 @@ func getNumber() throws -> [Int] {
     중복 숫자는 허용하지 않습니다.
     입력 :
     """, terminator: " ")
-
-    guard let input = readLine() else {
+    
+    if let input = readLine() {
+        return try verifyNumbers(numbers: input)
+    } else {
         throw InputError.verificationFail
     }
-
-    return try verifyNumbers(numbers: input)
 }
 
 func verifyNumbers(numbers: String) throws -> [Int] {
