@@ -132,15 +132,15 @@ func getNumber() throws -> [Int] {
     """, terminator: " ")
     
     if let input = readLine() {
-        return try verifyNumbers(numbers: input)
+        return try verifyNumbers(with: input)
     } else {
         throw InputError.verificationFail
     }
 }
 
-func verifyNumbers(numbers: String) throws -> [Int] {
+func verifyNumbers(with userInput: String) throws -> [Int] {
 
-    let numbersArray = numbers.split(separator: " ")
+    let numbersArray = userInput.split(separator: " ")
     var checkedNumber: [Int] = []
 
     guard Set(numbersArray).count == 3, numbersArray.count == 3 else {
