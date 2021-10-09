@@ -30,7 +30,7 @@ func returnResult(of numbers: [Int]) -> String {
 
     repeatJudgement(with: numbers)
 
-    let result = "(strikeCount) 스트라이크, (ballCount) 볼"
+    let result = "\(strikeCount) 스트라이크, \(ballCount) 볼"
 
     return result
 }
@@ -68,9 +68,9 @@ func playOneRound() {
     ballCount = 0
 
     do{
-        let randomNumbers = try getNumber()
-        let randomNumberToString: String = convertArrayToString(from: randomNumbers)
-        let resultOfJudgement = returnResult(of: randomNumbers)
+        let playNumber = try getNumber()
+        let randomNumberToString: String = convertArrayToString(from: playNumber)
+        let resultOfJudgement = returnResult(of: playNumber)
 
         tryCount -= 1
 
